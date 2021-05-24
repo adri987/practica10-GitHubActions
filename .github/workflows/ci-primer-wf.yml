@@ -25,4 +25,4 @@ jobs:
         run: Get-Location
       - name: step2
         run: pwd
-        shell: bashs
+        shell: bash
