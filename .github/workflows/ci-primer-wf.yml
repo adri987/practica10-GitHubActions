@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:      
       - name: nombre step1
-        run: eccho "Hello World"
+        run: echo "Hello World"
       - name: nombre step2
         run: |
           node-v
