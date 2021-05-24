@@ -5,11 +5,24 @@ jobs:
   ejecutar-comandos-shell:    
     runs-on: ubuntu-latest
     steps:      
-      - name: nombre step1
+      - name: step1
         run: echo "Hello World"
-      - name: nombre step2
+      - name: step2
         run: |
           node -v
           npm -v
           ls -la
           cat /etc/os-release
+      - name: step3
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python
+  comandos-windows:
+    runs-on: windows-latest
+    steps:
+      - name: step1
+        run: Get-Location
+      - name: step2
+        run: pwd
+        shell: bashs
