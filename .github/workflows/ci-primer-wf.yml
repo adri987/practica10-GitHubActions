@@ -2,7 +2,7 @@
 name: Comandos de shell
 on: #[push]
   schedule:
-  - cron:"0/3 * * * *"
+    - cron: "0/3 * * * *"
 jobs: 
   ejecutar-comandos-shell:    
     runs-on: ubuntu-latest
