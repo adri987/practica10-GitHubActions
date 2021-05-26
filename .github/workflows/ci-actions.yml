@@ -8,7 +8,7 @@ jobs:
         run: |
           ls -la
       - name: Clonar
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
 
       - name: Ocultos despues
         run: |
