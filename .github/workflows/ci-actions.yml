@@ -1,0 +1,16 @@
+name: Actions
+on: [push]
+jobs:
+  run-github-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ocultos
+        run: |
+          ls -la
+      - name: Clonar
+        uses: actions/checkout@v1
+
+      - name: Ocultos despues
+        run: |
+          ls -la
+
